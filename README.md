@@ -1,1 +1,1 @@
-# kind-k8s-clusterops-kickstarter
+# kind-k8s-clusterops spin-up guide
