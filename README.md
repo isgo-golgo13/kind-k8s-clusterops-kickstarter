@@ -34,6 +34,8 @@ Syntax:
 kind create cluster <--name=string> <--wait=duration (default is 0s)>
 ```
 ***Actual use:***
+
+This will create a KinD K8s cluster with the cluster name as 'enginesvc-cluster' with a delayed wait time for spinup of 5 secs
 ```
 kind create cluster --name enginesvc-cluster --wait 5
 ```
@@ -44,6 +46,8 @@ Syntax:
 kind delete cluster <--name=string> <--wait=duration (default is 0s)>
 ```
 ***Actual use:***
+
+This will delete a KinD K8s cluster with the cluster name as 'enginesvc-cluster' with a delayed wait time for spinup of 5 secs
 ```
 kind delete cluster --name enginesvc-cluster --wait 5
 ```
