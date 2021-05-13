@@ -4,8 +4,12 @@ This guide shows how to spin up and operate the lifecycle of a Docker-in-Docker 
 
 ### Create a KinD K8s cluster
 ```
-***Syntax:***
+Syntax:
 kind create cluster <--name=string> <--wait=duration (default is 0s)>
+```
+***Actual use:***
+```
+kind create cluster --name enginesvc-cluster --wait 5
 ```
 
 ### Delete a KinD K8s cluster
@@ -13,4 +17,7 @@ kind create cluster <--name=string> <--wait=duration (default is 0s)>
 Syntax:
 kind delete cluster <--name=string> <--wait=duration (default is 0s)>
 ```
-
+***Actual use:***
+```
+kind delete cluster --name enginesvc-cluster --wait 5
+```
