@@ -6,7 +6,10 @@ This guide shows how to spin up and operate the lifecycle of a Docker-in-Docker 
 
 To install the KinD Docker-in-Docker K8s local cluster, the preferred approach is to use ***`arkade`*** CLI. 
 
-To install the arkade K8s CLI installer go here for instructions: https://github.com/alexellis/arkade
+To install the arkade K8s CLI installer do the following:
+```
+curl -sLS https://dl.get-arkade.dev | sudo sh
+```
 
 If arkade is installed or after arkdade is installed, to install KinD do the following:
 ```
