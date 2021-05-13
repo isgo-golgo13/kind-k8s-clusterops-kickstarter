@@ -14,7 +14,7 @@ The official github site for `arkdade` is here: https://github.com/alexellis/ark
 
 If arkade is installed or after arkdade is installed, to install KinD do the following:
 ```
-arkade get kubectl
+arkade get kubectl --------> If and only if kubectl was not installed
 arkade get kind
 ```
 
