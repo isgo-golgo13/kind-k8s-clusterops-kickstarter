@@ -1,4 +1,4 @@
-# KinD K8s ClusterOps Spin-up Guide
+# KinD K8s ClusterOps Spin-Up Guide
 
 This guide shows how to spin up and operate the lifecycle of a Docker-in-Docker K8s cluster using KinD.
 
