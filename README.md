@@ -1,4 +1,4 @@
-# kind-k8s-clusterops spin-up guide
+# KinD K8s ClusterOps Spin-up Guide
 
 ### Create a KinD K8s cluster
 ```
