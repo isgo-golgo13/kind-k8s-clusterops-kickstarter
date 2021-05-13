@@ -1,6 +1,7 @@
 # KinD K8s ClusterOps Spin-Up Guide
 
 This guide shows how to spin up and operate the lifecycle of a Docker-in-Docker K8s cluster using KinD.
+The offical KinD site is here: https://kind.sigs.k8s.io/ and the KinD quick start page is here:  https://kind.sigs.k8s.io/docs/user/quick-start/
 
 ### Install KinD (Unix/Linux)
 
