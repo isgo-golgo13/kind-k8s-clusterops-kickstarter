@@ -49,6 +49,80 @@ This will create a KinD K8s cluster with the cluster name as 'enginesvc-cluster'
 kind create cluster --name enginesvc-cluster --wait 5
 ```
 
+
+### Create Multi-Node and Multi-Node (HA) High Availability Clusters
+
+To create multi-node (one control-plane node, N worker nodes) clusters or multi-node HA (min three control-plane nodes, min three worker nodes) cluster, KinD uses a **YAML** config file (a cluster-config.yaml file stored on disk and passed to the `kind create cluster` CLI.
+
+#### Multi-Node (One Control Plane Node, Three Worker Node) Cluster
+
+In a stored `cluster-config.yaml` file for this kind of cluster.
+
+```
+# four node (one control plane node, three worker nodes) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+```
+
+Create this cluster as follows:
+
+```
+kind create cluster --name enginesvc-cluster --config ./cluster-config.yaml --wait 5
+```
+To get info on the cluster just created do the following:
+
+```
+kind get clusters
+```
+
+To get info on the cluster nodes just created do the following:
+
+```
+kind get nodes
+```
+
+
+#### Multi-Node HA-High Availability (Min Three Control Plane Nodes, Min Three Worker Node) Cluster
+
+In a stored `cluster-config.yaml` file for this kind of cluster.
+
+```
+# six node (three control plane nodes, three worker nodes) HA cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: control-plane
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+```
+
+Create this cluster as follows:
+
+```
+kind create cluster --name enginesvc-cluster --config ./cluster-config.yaml --wait 5
+```
+To get info on the cluster just created do the following:
+
+```
+kind get clusters
+```
+
+To get info on the cluster nodes just created do the following:
+
+```
+kind get nodes
+```
+
+
+
 ### Delete a KinD K8s cluster
 ```
 Syntax:
