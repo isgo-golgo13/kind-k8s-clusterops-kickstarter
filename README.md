@@ -10,6 +10,7 @@ To install the arkade K8s CLI installer do the following:
 ```
 curl -sLS https://dl.get-arkade.dev | sudo sh
 ```
+The official github site for `arkdade` is here: https://github.com/alexellis/arkade
 
 If arkade is installed or after arkdade is installed, to install KinD do the following:
 ```
