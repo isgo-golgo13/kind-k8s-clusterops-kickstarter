@@ -4,7 +4,7 @@ This guide shows how to spin up and operate the lifecycle of a Docker-in-Docker 
 
 ### Create a KinD K8s cluster
 ```
-Syntax:
+***Syntax:***
 kind create cluster <--name=string> <--wait=duration (default is 0s)>
 ```
 
