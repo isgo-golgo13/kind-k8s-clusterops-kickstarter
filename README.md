@@ -29,6 +29,14 @@ The expected result of this validation should show (or a later v.X.X.X version t
 kind v0.8.1 go1.14.4 darwin/amd64
 ```
 
+### To Install and Create Ingress Controller for KinD
+
+To create a KinD configuraion and install an ingress controller read the following:
+
+https://kind.sigs.k8s.io/docs/user/configuration/
+https://kind.sigs.k8s.io/docs/user/ingress/
+
+
 ### Create a KinD K8s cluster
 ```
 Syntax:
