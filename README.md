@@ -33,7 +33,8 @@ kind v0.8.1 go1.14.4 darwin/amd64
 
 To create a KinD configuraion and install an ingress controller read the following:
 
-https://kind.sigs.k8s.io/docs/user/configuration/ and https://kind.sigs.k8s.io/docs/user/ingress/
+* https://kind.sigs.k8s.io/docs/user/configuration/
+* https://kind.sigs.k8s.io/docs/user/ingress/
 
 
 ### Create a KinD K8s cluster
