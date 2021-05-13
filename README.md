@@ -18,6 +18,16 @@ arkade get kubectl
 arkade get kind
 ```
 
+### Validate KinD installation and KinD installed version
+```
+kind version
+```
+
+The expected result of this validation should show (or a later v.X.X.X version tag):
+```
+kind v0.8.1 go1.14.4 darwin/amd64
+```
+
 ### Create a KinD K8s cluster
 ```
 Syntax:
